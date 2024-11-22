@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-violet: #7776B3;
+    --light-gray: #F0F0F0;
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary-color: #7776B3; /* You can adjust this if needed */
+}
+
+body {
+    font-family: "Istok Web", sans-serif; /* Default font for body text */
+    background-color: var(--light-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px; /* Add space above titles */
+    margin-bottom: 10px; /* Add space below titles */
+}
+
+p {
+    margin-top: 10px; /* Add space above paragraphs */
+    margin-bottom: 10px; /* Add space below paragraphs */
+}
+
+h1, h2 {
+    font-family: "Italiana", sans-serif; /* Italiana for h1 and h2 */
+}
+
+h3, h4, h5, h6, p {
+    font-family: "Istok Web", sans-serif; /* Istok Web for h3, h4, h5, h6, and p */
+}
+
+.istok-web-regular {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.istok-web-bold {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.istok-web-regular-italic {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.istok-web-bold-italic {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--dark-violet);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px; /* Set a max width for the section */
+    margin: 0 auto; /* Center the section */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.profile-image {
+    width: 100%; /* Make the image take full width of its container */
+    max-width: 200px; /* Set a maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make it circular */
+    margin-top: 20px; /* Space above the image */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+    margin-top: 20px; /* Add some space above the video */
+    width: 60px; /* Set a fixed width for the container */
+    height: 60px; /* Set a fixed height for the container */
+    padding: 3%;
+    border-radius: 50%; /* Make the container round */
+    overflow: hidden; /* Hide overflow if any */
+    background-color: var(--white); /* Optional: Set a background color */
+}
+
+@media (min-width: 601px) {
+    .gallery img:hover {
+        transform: scale(1.1); /* Scale image to 110% on hover */
+    }
+    .video-container {
+        width: 120px; /* Increase width for desktop */
+        height: 120px; /* Increase height for desktop */
+    }
+}
+
+.rounded-video {
+    width: auto; /* Set width to auto to maintain original aspect ratio */
+    height: 100%; /* Set height to 100% of the container */
+    object-fit: contain; /* Ensure the video fits within the container without cropping */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text inside the flex item */
+}
+
+.icon {
+    width: 50px; /* Set a fixed width for icons */
+    height: auto; /* Maintain aspect ratio for icons */
+    margin-bottom: 10px; /* Add space below the icon */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: calc(50% - 20px); /* Adjust width to account for margin */
+    margin: 5px; /* Space between images */
+    object-fit: cover; /* Existing object fit */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Scale image to 110% on hover */
+}
+.gallery img:hover {
+    transform: scale(1.1); /* Scale image to 110% on hover */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Scale image to 110% on hover */
+}
+
+.gallery-item {
+    text-align: center; /* Center the text under each image */
+    margin: 10px; /* Space around each gallery item */
+}
+
+.gallery-item img {
+    width: calc(100% - 20px); /* Adjust width to fit within the container */
+    margin: 0 auto; /* Center the image */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.gallery-item p {
+    margin-top: 5px; /* Space between the image and the caption */
+    font-size: 14px; /* Adjust font size as needed */
+    color: var(--black); /* Text color */
+}
+
+.galleryh1{
+    text-align: center;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 601px) {
+    .gallery-item {
+        width: calc(50% - 20px); /* Adjust width for larger screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Change to column layout on mobile */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .flex-item {
+        width: 100%; /* Make flex items full width on mobile */
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form select {
+    width: 80%; /* Match the width of other inputs */
+    padding: 10px; /* Match the padding of other inputs */
+    margin-bottom: 10px; /* Space below the select */
+    height: 40px; /* Set a specific height to match input fields */
+    font-size: 16px; /* Adjust font size to match other inputs */
+    border: 1px solid #ccc; /* Match border style */
+    border-radius: 4px; /* Match border radius */
+    background-color: var(--white); /* Match background color */
+}
+
+form select {
+    appearance: none; /* Remove default styling (optional) */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.fab-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--dark-violet);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

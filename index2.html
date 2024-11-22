@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Portfolio</title>
+</head>
+
+    <nav class="navbar">
+        <img src="IMG LOGO_ER_lila_fondoresponsive.png" alt="Logo" class="logo">
+        <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+        </ul>
+    </nav>
+
+    <div id="inicio" class="section">
+        <h1> Emma Ramiseiro</h1>
+        <h2>Ilustración y diseño.</h2>
+        <p>Ilustradora y diseñadora gráfica con conocimiento de creación y diseño web basada en barcelona.</p>
+        <img width="200px" src="IMG 1_portrate.png" alt="Portrate" class="profile-image">
+        <div class="video-container">
+            <video class="rounded-video" autoplay muted loop>
+                <source src="IMG LOGO_ER_lila_fondoresponsive.mp4" type="video/mp4">
+                <source src="VID LOGO_ER_lila_fondoresponsive.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourusername" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.behance.net/yourusername" target="_blank">
+                <img src="behance-icon.png" alt="Behance">
+            </a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h1>Ilustración y dibujo.</h1>
+            <img src="icon1.png" alt="Icon 1" class="icon">
+            <p>Desde muy pequeña me ha encantado en el <strong>dibujo tradicional y digital</strong>, y me he formado también en cuanto a <strong>ilustración vectorial</strong> especialmente con <em>Adobe Illustrator.</em></p>
+        </div>
+        <div class="flex-item">
+            <h1>Diseño gráfico.</h1>
+            <img src="icon2.png" alt="Icon 2" class="icon">
+            <p>He perfeccionado mis habilidades en el diseño de marca, desde la creación del proyecto hasta el diseño de logo o naming de marca, infografías o maqutación web. He realizado proyectos con la mayoría de programas Adobe, por ejemplo</p>
+        </div>
+        <div class="flex-item">
+            <h1>Diseño web.</h1>
+            <img src="icon3.png" alt="Icon 3" class="icon">
+            <p>Esta misma pagina web ha sido generada por mi parte. Tengo conocimiento de diseño y publicación web, y he trbajado con programas como <em>Visual Studio Code, Wordpress o GitHub.</em></p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="PDF CV ER 2024.pdf" class="custom-button" download="Mi_CV.pdf">Descarga mi CV</a>
+    </div>
+
+    <h1 id="galeria" class="galleryh1">Galeria</h1>
+
+    <div class="gallery">        
+        <div class="gallery-item">
+            <img src="IMG 2_ilustration_fenec.png" alt="Descripción de la imagen 1" />
+            <p>Descripción de la imagen 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG 3_ilustrarion_cuarentena.png" alt="Descripción de la imagen 2" />
+            <p>Descripción de la imagen 2</p>
+        </div>
+        <div class="gallery-item">
+            <a href="ruta/a/tu-pdf-4.pdf" target="_blank">
+                <img src="IMG 4_portada_QNADUP.png" alt="Descripción de la imagen 4" />
+            </a>
+            <p>Descripción de la imagen 4</p>
+        </div>
+        <div class="gallery-item">
+            <a href="PDF RIPA_AZAR.pdf" target="_blank">
+                <img src="IMG 5_ripa_azar.jpg" alt="Descripción de la imagen 5" />
+            </a>
+            <p>Descripción de la imagen 5</p>
+        </div>
+        <div class="gallery-item">
+            <img src="ruta/a/IMG 6.png" alt="Descripción de la imagen 6" />
+            <p>Descripción de la imagen 6</p>
+        </div>
+    </div>
+
+    <div id="contacto" class="section">
+        <h1>Contacto</h1>
+        <p>
+            Mi correo electrónico de contacto directo es 
+            <a href="mailto:ergestiones8@gmail.com" style="text-decoration: underline; color: black;" target="_blank">
+                <strong>ergestiones8@gmail.com</strong></a> 
+             simplemente haciendo click, o puedes rellenar el formulario a continuación:
+        </p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="service">¿Te interesa algun servicio concreto?</label>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>¡Haz click aqui y selecciona!</option>
+                <option value="graphic-design">Graphic Design (Logo, Branding, etc.)</option>
+                <option value="illustration">Illustration (for books, eBooks, etc.)</option>
+                <option value="web-design">Web Design (Visual Studio Code, GitHub, WordPress)</option>
+                <option value="other">Other (please specify in the message)</option>
+            </select>
+    
+            <label for="message">Message (optional):</label>
+            <textarea id="message" name="message"></textarea>
+    
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="sobre-mi" class="section">
+        <h1>Sobre mí</h1>
+        <p>A brief description about yourself.</p>
+        <img src="your-image.jpg" alt="Your Image" class="profile-image">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourusername" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.behance.net/yourusername" target="_blank">
+                <img src="behance-icon.png" alt="Behance">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <a href="#" class="fab-button">^</a>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
